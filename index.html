@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <script type="text/javascript">
+        var verbs = [
+            "eat",
+            "lick",
+            "chew",
+            "bite",
+            "sensually massage",
+            "fist",
+            "bathe in",
+            "masturbate to",
+            "listen to",
+            "engage in conversation with",
+            "be related to",
+            "fuck",
+            "work for",
+            "get railed by",
+            "meet",
+            "have a beer with",
+            "gently caress",
+            "go on a date with"
+
+        ]
+        var nouns = [
+            "broken glass",
+            "a tarantula",
+            "Peter Gabriel",
+            "failed voice actor Vic Mignogna",
+            "spiders",
+            "fire",
+            "nerd drippings",
+            "RMS's toe cheese",
+            "a medical waste dump",
+            "an organ grinder monkey",
+            "Amazon",
+            "an angry rhinocerous",
+            "a regulation rhino",
+            "COVID",
+            "a Jimmy Dean breakfast sausage",
+            "Jordan Peterson",
+            "Ben Shapiro"
+        ]
+        function GetNewPhrase() {
+            var verb = verbs[Math.floor(verbs.length * Math.random())]
+            var noun = nouns[Math.floor(nouns.length * Math.random())]
+            document.getElementById('verb').innerHTML = verb;
+            document.getElementById('noun').innerHTML = noun;
+            console.log("Hello world");
+        }
+    </script>
+</head>
+
+<body>
+    <h2>I would rather <span id="verb">_____</span> <span id="noun">____</span></h2>
+    <button onclick="GetNewPhrase()">What would you rather do?</button>
+</body>
+
+</html>
